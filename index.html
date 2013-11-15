@@ -90,9 +90,7 @@
           conflict causado por el paso 4.
         </h3>
         <div class="answer">
-          Colocar acá el hash. Nota: El hash sería algo como: 8a000d3d2ec8b5f8b2286ad279c54b430fc97c67<br />
-          o mejor aún, podrían apuntarlo directamente a github:
-          <a href="https://github.com/devlabs-usb/tarea1-git/commit/8a000d3d2ec8b5f8b2286ad279c54b430fc97c67" target="blank">8a000d3d2ec8b5f8b2286ad279c54b430fc97c67</a>
+          <a href="https://github.com/fgvzla/tarea1-git/commit/957e15d573459604e311fbd9dd7b4a4af2503a0b" target="blank">957e15d573459604e311fbd9dd7b4a4af2503a0b</a>
         </div>
       </article>
       <article id="q2">
@@ -107,10 +105,9 @@
           subsecuencia “DD”.
         </h3>
         <div class="answer">
-          Coloca tu respuesta aquí.<br/>
-          Opcionalmente, puedes poner los archivos con la solución
-          en tu repositorio y poner la dirección del archivo acá.
-          Como por ejemplo: /Código/Scrabble.py
+          El programa encontr&oacute; que las letras que no se repiten de forma consecutiva son 'Q' y 'X'.<br/>
+          <a href="https://github.com/fgvzla/tarea1-git/blob/master/Codigo/scrabble.py">Link al c&oacute;digo fuente.</a>
+
         </div>
       </article>
       <article id="q3">
@@ -120,7 +117,40 @@
           repo', 'dirty working tree' y 'merge conflict'.
         </h3>
         <div class="answer">
-          Coloca tus respuestas aquí.
+          <b>Working tree:</b> <br />
+		  <p> Es el directorio base local en el que esta establecido el proyecto
+			 y es controlado localmente. Luego de realizar cambios al proyecto,
+			 este directorio es sincronizado con el servidor remoto.
+		  </p>
+
+          <b>Index:</b> <br />
+		  <p> Es donde se contiene todos los archivos nuevos o a los que
+			  se les realizaron cambios desde la &uacute;ltima vez que se realizo
+			  commit. Se le puede referir como el &aacute;rea de preparaci&oacute;
+			  (staging area).
+		  </p>
+          <b>Local repo:</b> <br />
+		  <p> El repositorio local es donde se manejan las modificaciones hechas
+			  al proyecto en una estaci&oacute;n de trabajo. Esto permite trabajar
+			  localmente, probar y retroceder a versiones anteriores locales antes
+			  de relizar una sincronizaci&oacute;n con el repositorio remoto. 
+		  </p>
+          <b>Remote repo:</b> <br />
+		  <p> Es un repositorio externo en el que se guarda el proyecto y las
+			  multiples versiones que se realizan en los repositorios locales
+			  de las personas que contribuyen a dicho proyecto. En este repositorio
+			  es donde se unen los c&oacute;digos de los distintos contribuyentes.
+		  </p>
+          <b>Dirty working tree:</b> <br />
+		  <p> Es cuando se han realizado cambios al proyecto y estos no han sido
+			  reflejados en el index.
+		  </p>
+          <b>Merge conflict:</b> <br />
+		  <p> Se produce cuando dos commits o branches diferentes han modificado
+			  areas similares de un mismo archivo, creando un conflicto que el
+			  usuario debe resolver analizando las partes del c&oacute;digo
+			  que dan problemas.
+		  </p>
         </div>
       </article>
       <article id="q4">
@@ -150,42 +180,42 @@
             <tbody>
               <tr>
                 <th scope="row">working dir</th>
+                <td>R</td>
                 <td></td>
+                <td>R</td>
                 <td></td>
+                <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
               </tr>
               <tr>
                 <th scope="row">index</th>
+                <td>R</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
                 <td>R/W</td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td>R</td>
               </tr>
               <tr>
                 <th scope="row">local repo</th>
                 <td></td>
-                <td></td>
-                <td></td>
                 <td>W</td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>W</td>
+                <td>R/W</td>
+                <td>R</td>
+                <td>R</td>
               </tr>
               <tr>
                 <th scope="row">remote repo</th>
                 <td></td>
+                <td>R</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>R</td>
+                <td>R/W</td>
                 <td></td>
               </tr>
             </tbody>
